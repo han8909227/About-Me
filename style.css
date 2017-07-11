@@ -1,10 +1,7 @@
-*{
-color:blue;
 
-}
 
 body{
-  background-color: yellow;
+  background-color: white;
 
 
 }
@@ -21,4 +18,18 @@ body{
   height:100px;
   width:200px;
 
+}
+
+
+#footer {
+	height: 50px;
+	background-color: grey;
+	font-family: serif;
+	font-size: 20px;
+	text-align: center;
+	color: blue;
+}
+
+#footer p {
+	padding-top: 15px;
 }
