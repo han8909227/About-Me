@@ -1,4 +1,24 @@
 *{
-color:blue; 
+color:blue;
+
+}
+
+body{
+  background-color: yellow;
+
+
+}
+
+
+.one{
+  color:orange;
+
+
+}
+
+.two{
+  background-color:purple;
+  height:100px;
+  width:200px;
 
 }
