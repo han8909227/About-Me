@@ -1,35 +1,48 @@
 
+*{
+  font-family: serif;
+
+}
+
+
+
+.topRow{
+     position: relative;
+     border: 20px solid black;
+
+}
 
 body{
-  background-color: white;
-
-
-}
-
-
-.one{
-  color:orange;
-
+  background-color: black;
 
 }
 
-.two{
-  background-color:purple;
-  height:100px;
-  width:200px;
+h2{
+  font-weight:bold;
+  font-size: 25px;
+  color:white;
 
+}
+
+ul,li,p{
+  font-size: 20px;
+  color:white;
+}
+
+#topRow {
+	position: fixed;
+	width: 100%;
+	margin-top: 10px;
+	height: 100px;
+	background-color: grey;
+	margin-bottom: 20px;
 }
 
 
 #footer {
 	height: 50px;
 	background-color: grey;
-	font-family: serif;
 	font-size: 20px;
 	text-align: center;
 	color: blue;
-}
-
-#footer p {
-	padding-top: 15px;
 }
