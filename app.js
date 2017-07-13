@@ -4,89 +4,39 @@ var totalRight = 0;
 //start of game
 
 //question 1
-var question1 = function(){
-  var askOne = prompt('Do you think I like dogs?').toUpperCase()
-  if (askOne === 'YES' || 'Y'){
-    alert('I love dogzzzz !');
-  console.log('dog lovers');
-  totalRight += 1;
+var questions = ['Do you think I like dogs?','Do you find my code clean and organized?', 'Do you think I can swim?', 'Am I a bug lover?', 'Do you think I have traveled to China before?'];
+var fullAnswers = ['YES', 'YES', 'NO', 'NO', 'YES'];
+var shortAnswers = ['Y', 'Y', 'N', 'N', 'Y'];
+var alertCorrect = ['I love dogzzzz !', 'You bet they are! ', 'No, that is correct', 'Right! Not digitally or in the real world!', 'Right! I was born there!']
+var alertWrong = ['really? Who doesn\'t like dogzzz!', 'You must have seen worse !!', 'I drink like a fish so nooo', 'No way!', 'Wrong! I was born there fool.']
 
-} else if (askOne === 'NO' || 'N') {
-  alert('really? Who doesn\'t like dogzzz!');
-  console.log('warning! he could be an alien !');
+var startQuestions = function (){
 
-} else{
-  alert('I need a yes or no please');
-}}
+for(var i = 0; i < questions.length; i++){
 
+  var askOne = prompt(questions[i]).toUpperCase()
+  if (askOne === fullAnswers[i] || askOne === shortAnswers[i]){
 
-//question 2
-var question2 = function(){
-var askTwo = prompt('Do you find my code clean and organized? ').toUpperCase()
-if (askTwo === 'YES' || 'Y'){
-  alert('You bet they are! ');
-  console.log('The answer to question 2 is ' + askTwo );
-  totalRight += 1;
+    alert(alertCorrect[i]);
 
-} else if (askTwo === 'NO' || 'N') {
-  alert('You must have seen worse !!');
-  console.log('The answer to question 2 is ' + askTwo );
+    totalRight += 1;
+
+} else if (askOne !== fullAnswers[i] || askOne !== shortAnswers[i]){
+  alert(alertWrong[i]);
 
 } else{
   alert('I need a yes or no please');
-}}
+}}};
 
+startQuestions();
 
-//question 3
-var question3 = function(){
-var askThree = prompt('Do you think I can swim?').toUpperCase()
-if (askThree === 'YES' || 'Y'){
-  alert('I drink like a fish when I go swim... ');
-  console.log('The anstwer to question 2 is ' + askThree );
-
-} else if (askThree === 'NO' || 'N') {
-  alert('That is correct');
-  console.log('The answer to question 3 is ' + askThree );
-  totalRight += 1;
+if (totalRight >= 5){
+  alert('Congradulation! You got ' + totalRight + '/5 questions right!!')
 
 } else{
-  alert('I need a yes or no please');
-}}
+  alert('Oh no! You only got ' + totalRight + '/5 questions right')
+}
 
-
-//question 4
-var question4 = function(){
-var askFour = prompt('Are my a bug lover?').toUpperCase()
-if(askFour === 'YES' || 'Y'){
-  alert('No! not in both real and virtual world! ');
-  console.log('The answer to question 2 is ' + askFour );
-
-} else if (askFour === 'NO' || 'N'){
-  alert('Yep, I am a debugger!');
-  console.log('The answer to question 4 is ' + askFour );
-  totalRight += 1;
-
-} else{
-  alert('I need a yes or no please');
-}}
-
-
-
-//question 5
-var question5 = function(){
-var askFive = prompt('Do you think I have traveled to China before?').toUpperCase()
-if(askFive === 'YES' || 'Y'){
-  alert('Of course I was born there ');
-  console.log('The answer to question 5 is ' + askFive );
-  totalRight += 1;
-
-} else if (askFive === 'NO' || 'N'){
-  alert('I have tried Panda Express in China');
-  console.log('The answer to question 5 is ' + askFive );
-
-} else {
-  alert('I need a yes or no please');
-}}
 
 //question 6
 var question6 = function(){
@@ -153,11 +103,7 @@ while(userSport.length < 6 && exitSport){
     alert('You ran out of chances. My favorite sports are table tennis and basketball!');
   }};
 
-question1();
-question2();
-question3();
-question4();
-question5();
+
 question6();
 question7();
 
