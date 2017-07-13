@@ -7,34 +7,34 @@ var totalRight = 0;
 var questions = ['Do you think I like dogs?','Do you find my code clean and organized?', 'Do you think I can swim?', 'Am I a bug lover?', 'Do you think I have traveled to China before?'];
 var fullAnswers = ['YES', 'YES', 'NO', 'NO', 'YES'];
 var shortAnswers = ['Y', 'Y', 'N', 'N', 'Y'];
-var alertCorrect = ['I love dogzzzz !', 'You bet they are! ', 'No, that is correct', 'Right! Not digitally or in the real world!', 'Right! I was born there!']
-var alertWrong = ['really? Who doesn\'t like dogzzz!', 'You must have seen worse !!', 'I drink like a fish so nooo', 'No way!', 'Wrong! I was born there fool.']
+var alertCorrect = ['I love dogzzzz !', 'You bet they are! ', 'No, that is correct', 'Right! Not digitally or in the real world!', 'Right! I was born there!'];
+var alertWrong = ['really? Who doesn\'t like dogzzz!', 'You must have seen worse !!', 'I drink like a fish so nooo', 'No way!', 'Wrong! I was born there fool.'];
 
 var startQuestions = function (){
 
-for(var i = 0; i < questions.length; i++){
+  for(var i = 0; i < questions.length; i++){
 
-  var askOne = prompt(questions[i]).toUpperCase()
-  if (askOne === fullAnswers[i] || askOne === shortAnswers[i]){
+    var askOne = prompt(questions[i]).toUpperCase();
+    if (askOne === fullAnswers[i] || askOne === shortAnswers[i]){
 
-    alert(alertCorrect[i]);
+      alert(alertCorrect[i]);
 
-    totalRight += 1;
+      totalRight += 1;
 
-} else if (askOne !== fullAnswers[i] || askOne !== shortAnswers[i]){
-  alert(alertWrong[i]);
+    } else if (askOne !== fullAnswers[i] || askOne !== shortAnswers[i]){
+      alert(alertWrong[i]);
 
-} else{
-  alert('I need a yes or no please');
-}}};
+    } else{
+      alert('I need a yes or no please');
+    }}};
 
 startQuestions();
 
 if (totalRight >= 5){
-  alert('Congradulation! You got ' + totalRight + '/5 questions right!!')
+  alert('Congradulation! You got ' + totalRight + '/5 questions right!!');
 
 } else{
-  alert('Oh no! You only got ' + totalRight + '/5 questions right')
+  alert('Oh no! You only got ' + totalRight + '/5 questions right');
 }
 
 
