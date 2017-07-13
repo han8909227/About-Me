@@ -1,6 +1,6 @@
 
 var totalRight = 0;
-
+//start of game
 
 // var oneQue = ['Do you think I like dogs']
 // var oneAns = ['YES','NO','Y','N']
