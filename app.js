@@ -1,7 +1,7 @@
 'use strict';
 
 var totalRight = 0;
-
+//start of game
 
 //question 1
 var question1 = function(){
