@@ -149,9 +149,9 @@ while(userSport.length < 6 && exitSport){
 
 }
 
-if (exitSport){
-  alert('You ran out of chances. My favorite sports are table tennis and basketball!');
-}}
+  if (exitSport){
+    alert('You ran out of chances. My favorite sports are table tennis and basketball!');
+  }};
 
 question1();
 question2();
