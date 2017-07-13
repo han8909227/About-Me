@@ -4,8 +4,6 @@
 
 }
 
-
-
 .topRow{
    position: relative;
    border: 20px solid grey;
@@ -14,6 +12,8 @@
 
 body{
   background-color: black;
+  border: 5px solid yellow;
+  margin: 2px;
 
 }
 
@@ -21,6 +21,7 @@ h2{
   font-weight:bold;
   font-size: 25px;
   color:white;
+  border: 10px 20px solid white;
 }
 
 ul,li,p{
@@ -30,10 +31,11 @@ ul,li,p{
 
 #topRow {
 	position: fixed;
-	width: 100%;
-	margin: 10px 20px; 
+	width: 95%;
+	margin: 0px auto;
 	height: 100px;
 	background-color: grey;
+  border: 2px solid white;
 }
 
 

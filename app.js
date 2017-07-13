@@ -19,7 +19,7 @@ if (askOne === "YES" || "Y"){
 
 
 //question 2
-var askTwo = prompt("Do you find my code clean and organized in anyway? yes or no ").toUpperCase()
+var askTwo = prompt("Do you find my code clean and organized? ").toUpperCase()
 if (askTwo === "YES" || "Y"){
   alert("You bet they are! ");
   console.log("The answer to question 2 is " + askTwo );
@@ -38,12 +38,12 @@ if (askTwo === "YES" || "Y"){
 var askThree = prompt("Do you think I can swim?").toUpperCase()
 if (askThree === "YES" || "Y"){
   alert("I drink like a fish when I go swim... ");
-  console.log("The answer to question 2 is " + askThree );
-  totalRight += 1;
+  console.log("The anstwer to question 2 is " + askThree );
 
 } else if (askThree === "NO" || "N") {
   alert("That is correct");
   console.log("The answer to question 3 is " + askThree );
+  totalRight += 1;
 
 } else{
   alert("I need a yes or no please");
@@ -55,11 +55,11 @@ var askFour = prompt("Are my a bug lover?").toUpperCase()
 if(askFour === 'YES' || 'Y'){
   alert("No! not in both real and virtual world! ");
   console.log("The answer to question 2 is " + askFour );
-  totalRight += 1;
 
 } else if (askFour === 'NO' || 'N'){
   alert("Yep, I am a debugger!");
   console.log("The answer to question 4 is " + askFour );
+  totalRight += 1;
 
 } else{
   alert("I need a yes or no please");
@@ -91,7 +91,7 @@ var userArray = [];
 var trailLeft = 4;
 
 while (userArray.length < 4 && exitVariable) {
-  var prediction = parseInt(prompt("I'm thinking of a number between 1 and 20. What is it?"));
+  var prediction = parseInt(prompt("My lucky number is between 1 and 20. What is it?"));
     if(prediction === myNumber){
         alert("That's Correct!" + myNumber + " is my luck number!!");
         exitVariable = false;
@@ -99,13 +99,13 @@ while (userArray.length < 4 && exitVariable) {
 
     } else if(prediction > myNumber) {
         userArray.push(prediction);
-        trailLeft -=1;
+        trailLeft -= 1;
         alert("Too high!");
         alert("You got " + trailLeft + " chances left!");
 
     } else{
       userArray.push(prediction);
-      trailLeft -=1;
+      trailLeft -= 1;
       alert("Too low!");
       alert("You got " + trailLeft + " chances left!");
 
@@ -135,7 +135,7 @@ while(userSport.length < 6 && exitSport){
 
   } else{
     userSport.push(predictSport);
-    chanceLeft -=1;
+    chanceLeft -= 1;
     alert("Not exactly! You got " + chanceLeft + " chances left!");
   }
 
