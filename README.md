@@ -1,5 +1,5 @@
 # about-me
 About Me project for code 201 in July 2017
 
-Here is a list of stuff:
-- another thing
+July 13 -- This project was updated with paired programming. John Jensen was the
+driver and Han Bao was navigator.
