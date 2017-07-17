@@ -7,6 +7,8 @@ var totalRight = 0;
 var questions = ['Do you think I like dogs?','Do you find my code clean and organized?', 'Do you think I can swim?', 'Am I a bug lover?', 'Do you think I have traveled to China before?'];
 var fullAnswers = ['YES', 'YES', 'NO', 'NO', 'YES'];
 var shortAnswers = ['Y', 'Y', 'N', 'N', 'Y'];
+var fullWrongAnswers = ['NO','NO','YES','YES','NO'];
+var shortWrongShortAnswers = ['N','N','Y','Y','N'];
 var alertCorrect = ['I love dogzzzz !', 'You bet they are! ', 'No, that is correct', 'Right! Not digitally or in the real world!', 'Right! I was born there!'];
 var alertWrong = ['really? Who doesn\'t like dogzzz!', 'You must have seen worse !!', 'I drink like a fish so nooo', 'No way!', 'Wrong! I was born there fool.'];
 
@@ -21,11 +23,12 @@ var startQuestions = function (){
 
       totalRight += 1;
 
-    } else if (askOne !== fullAnswers[i] || askOne !== shortAnswers[i]){
+    } else if (askOne === fullWrongAnswers[i] || askOne === shortWrongShortAnswers[i]){
       alert(alertWrong[i]);
 
     } else{
       alert('I need a yes or no please');
+      i -= 1;
     }}};
 
 startQuestions();
